@@ -3,8 +3,8 @@
 	"description": "",
 	"version": "1.0.0",
 	"scripts": {
-		"start": "make build && node ./node_modules/.bin/serverless offline start --useDocker",
-		"watch": "nodemon --watch src -e go --exec npm start"
+		"start": "node ./node_modules/.bin/serverless offline start --useDocker",
+		"watch": "nodemon --watch src -e go,js --exec make build"
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.3",
