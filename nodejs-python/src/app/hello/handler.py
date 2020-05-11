@@ -7,8 +7,10 @@ def hello(event, context):
     res = requests.get('https://scotch.io')
     return {
         "headers": {
-            "Content-Type": "text/plan"
+            "Content-Type": "application/json"
         },
         "statusCode": res.status_code,
-        "body": "olá python " + str(uuid.uuid4()),
+        "body": json.dumps({
+            "message": "olá python " + str(uuid.uuid4())
+        }),
     }

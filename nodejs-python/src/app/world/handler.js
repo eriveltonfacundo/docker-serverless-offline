@@ -5,9 +5,9 @@ const uuid = require("uuid/v4");
 module.exports.world = async () => {
   return {
     headers: {
-      "Content-Type": "text/plan",
+      "Content-Type": "application/json",
     },
     statusCode: 200,
-    body: `olá nodejs ${uuid()}`,
+    body: JSON.stringify({ message: `olá nodejs ${uuid()}` }),
   };
 };
