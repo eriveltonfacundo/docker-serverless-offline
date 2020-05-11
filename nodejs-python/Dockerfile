@@ -19,11 +19,3 @@ RUN pip install -r /usr/src/app/hello/requirements.txt
 
 COPY serverless.yml /usr/src
 COPY ./src/app /usr/src/app
-
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-ENV PYTHONPATH=/usr/src/app
-
-EXPOSE 3000
-
-# RUN python -m ptvsd --host 0.0.0.0 --port 5678 --multiprocess -c 'import src.hello.handler; print handler.hello()'
