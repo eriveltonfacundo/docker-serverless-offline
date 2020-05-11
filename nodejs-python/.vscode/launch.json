@@ -8,8 +8,8 @@
       "protocol": "inspector",
       "address": "localhost",
       "port": 9229,
-      "localRoot": "${workspaceFolder}",
-      "remoteRoot": "/usr/app",
+      "localRoot": "${workspaceFolder}/src/app",
+      "remoteRoot": "/usr/src/app",
       "restart": true
     },
     {
