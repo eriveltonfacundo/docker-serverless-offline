@@ -8,6 +8,6 @@ module.exports.world = async () => {
       "Content-Type": "application/json",
     },
     statusCode: 200,
-    body: JSON.stringify({ message: `olá nodejs 1111 ${uuid()}` }),
+    body: JSON.stringify({ message: `olá nodejs ${uuid()}` }),
   };
 };
