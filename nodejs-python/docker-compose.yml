@@ -1,0 +1,11 @@
+version: '2'
+services: 
+  web:
+    build: .
+    command: npm run watch
+    ports: 
+      - "3000:3000"
+      - "9229:9229"
+      - "5678:5678"
+    volumes: 
+      - ./src/app:/usr/src/app

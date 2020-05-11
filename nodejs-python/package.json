@@ -1,0 +1,8 @@
+{
+  "name": "nodejs-python",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node --inspect=0.0.0.0:9229 --nolazy `which serverless` offline start --host 0.0.0.0",
+    "watch": "nodemon --ext js,json --exec npm start"
+  }
+}
